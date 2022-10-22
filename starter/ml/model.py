@@ -4,6 +4,7 @@ from sklearn.metrics import fbeta_score, precision_score, recall_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import GridSearchCV
 
+
 # Optional: implement hyperparameter tuning.
 def train_model(X_train, y_train):
     """
@@ -26,14 +27,16 @@ def train_model(X_train, y_train):
 
     base_estimator = RandomForestClassifier(random_state=42)
 
-    clf = GridSearchCV(base_estimator, param_grid, cv=5, scoring='f1', verbose=4)
+    clf = GridSearchCV(base_estimator, param_grid, cv=5,
+                       scoring='f1', verbose=4)
     clf.fit(X_train, y_train)
     return clf.best_estimator_
 
 
 def compute_model_metrics(y, preds):
     """
-    Validates the trained machine learning model using precision, recall, and F1.
+    Validates the trained machine learning model using precision,
+    recall, and F1.
 
     Inputs
     ------
@@ -58,7 +61,7 @@ def inference(model, X):
 
     Inputs
     ------
-    model : sklearn classifier 
+    model : sklearn classifier
         Trained machine learning model.
     X : np.array
         Data used for prediction.
@@ -72,13 +75,14 @@ def inference(model, X):
 
 def compute_metrics_for_slice(clf, data, X, y, categories):
     """Compute the metrics of a model for each categorical variable held fixed.
-    
+
     Inputs
     ------
     clf: sklearn classifier
         Trained machine learning model.
     data: pandas.DataFrame
-        Original DataFrame required to select rows according to category values.
+        Original DataFrame required to select rows according to category
+        values.
     X : np.array
         Data used for prediction
     y : np.array
@@ -92,16 +96,17 @@ def compute_metrics_for_slice(clf, data, X, y, categories):
             for val in data[cat].unique():
                 f.writelines(f'Category: {cat}, Value: {val}\n')
                 f.writelines('Metrics:\n')
-                # use column "Unnamed: 0" (copy of data index) to select all 
+                # use column "Unnamed: 0" (copy of data index) to select all
                 # rows belonging to category "cat".
                 idx = data[data[cat] == val]['Unnamed: 0'].values
-                X_cat = X[np.isin(X[:,0], idx)]
-                y_cat = y[np.isin(X[:,0], idx)]
+                X_cat = X[np.isin(X[:, 0], idx)]
+                y_cat = y[np.isin(X[:, 0], idx)]
                 if X_cat.shape[0] == 0:
-                    f.writelines('   No values found, metrics cannot be calculated.\n')
+                    f.writelines('   No values found to calculate metrics.\n')
                 else:
                     pred = inference(clf, X_cat)
-                    precision, recall, fbeta = compute_model_metrics(y_cat, pred)
+                    precision, recall, fbeta = compute_model_metrics(y_cat,
+                                                                     pred)
                     f.writelines(f'   - Precision: {precision}\n')
                     f.writelines(f'   - Recall: {recall}\n')
                     f.writelines(f'   - F1 Score: {fbeta}\n')
