@@ -4,13 +4,16 @@ from main import app
 
 client = TestClient(app)
 
+
 def test_get_return():
+    """Test function for a GET request."""
     r = client.get("/")
     assert r.status_code == 200
     assert r.json() == {"greeting": "Hello World!"}
 
 
 def test_inference_low_salary():
+    """Test function for a POST request using a low-salary example."""
     response = client.post(
         "/inference",
         json={'age': 39,
@@ -34,6 +37,7 @@ def test_inference_low_salary():
 
 
 def test_inference_high_salary():
+    """Test function for a POST request using a high-salary example."""
     response = client.post(
         "/inference",
         json={'age': 50,

@@ -23,9 +23,9 @@ def train_model(X_train, y_train, simple=True):
         Trained machine learning model.
     """
     if simple:
-        clf = RandomForestClassifier(n_estimators = 200,
-                                     max_depth = 50,
-                                     min_samples_split = 20,
+        clf = RandomForestClassifier(n_estimators=200,
+                                     max_depth=50,
+                                     min_samples_split=20,
                                      random_state=42)
         return clf.fit(X_train, y_train)
 
@@ -84,7 +84,7 @@ def inference(model, X):
 
 def load_model():
     """Load an existing model.
-    
+
     Returns
     -------
     model: dict
@@ -128,7 +128,7 @@ def compute_metrics_for_slices(clf, data, X, y, categories):
                     f.writelines('   No values found to calculate metrics.\n')
                 else:
                     # ignore first column which contains the index
-                    pred = inference(clf, X_cat[:,1:])
+                    pred = inference(clf, X_cat[:, 1:])
                     precision, recall, fbeta = compute_model_metrics(y_cat,
                                                                      pred)
                     f.writelines(f'   - Precision: {precision}\n')

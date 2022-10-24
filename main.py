@@ -8,6 +8,7 @@ from starter.ml.data import process_data
 
 app = FastAPI()
 
+
 class Test_Record(BaseModel):
     age: int
     workclass: str

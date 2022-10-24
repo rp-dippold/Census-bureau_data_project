@@ -8,7 +8,6 @@ from ml.model import train_model
 from ml.model import compute_metrics_for_slices
 from pandas import read_csv
 from joblib import dump
-#from joblib import load
 
 # Add code to load in the data.
 data = read_csv('./data/census_cleaned.csv')
@@ -38,27 +37,21 @@ X_test, y_test, encoder, lb = process_data(
     lb=lb, training=False
 )
 
-# Train and save a model. Binarizer, encoder and categorical features are 
-# required to process new data before feeding it to the classifier.
-# Ignore first column which contains the orginal index of each record.
-clf = train_model(X_train[:,1:], y_train)
+# Train the model and ignore the first column which contains the orginal
+# index of each record. The index is required in "compute_metrics_for_slices"
+# to select data belonging to data slices.
+clf = train_model(X_train[:, 1:], y_train)
+
+# Save the classifier, the encoder and the categorical features
+# as they are required to process new data before feeded to the classifier.
 model = {
     'encoder': encoder,
-    #'lbl_binarizer': lb,
     'classifier': clf,
     'cat_features': cat_features
 }
-
 dump(model, './model/model.joblib')
 
-#model = load('./model/model.joblib')
-#X_test, y_test, encoder, lb = process_data(
-#    test, categorical_features=model['cat_features'], 
-#    encoder=model['encoder'], training=False
-#)
-
 # Compute model performance on slices using test data
-
 compute_metrics_for_slices(
     model['classifier'],
     test,
