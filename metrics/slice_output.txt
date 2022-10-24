@@ -1,38 +1,38 @@
 Category: workclass, Value: Private
 Metrics:
-   - Precision: 0.8697368421052631
-   - Recall: 0.6690283400809717
-   - F1 Score: 0.7562929061784898
+   - Precision: 0.7731305449936628
+   - Recall: 0.6308169596690796
+   - F1 Score: 0.6947608200455581
 Category: workclass, Value: ?
 Metrics:
-   - Precision: 0.9047619047619048
-   - Recall: 0.48717948717948717
-   - F1 Score: 0.6333333333333333
-Category: workclass, Value: Local-gov
-Metrics:
-   - Precision: 0.8317757009345794
-   - Recall: 0.7007874015748031
-   - F1 Score: 0.7606837606837608
-Category: workclass, Value: State-gov
-Metrics:
-   - Precision: 0.8970588235294118
-   - Recall: 0.8356164383561644
-   - F1 Score: 0.8652482269503545
+   - Precision: 0.9444444444444444
+   - Recall: 0.3695652173913043
+   - F1 Score: 0.53125
 Category: workclass, Value: Self-emp-not-inc
 Metrics:
-   - Precision: 0.8645833333333334
-   - Recall: 0.5570469798657718
-   - F1 Score: 0.6775510204081632
-Category: workclass, Value: Self-emp-inc
-Metrics:
-   - Precision: 0.8571428571428571
-   - Recall: 0.9130434782608695
-   - F1 Score: 0.8842105263157894
+   - Precision: 0.7722772277227723
+   - Recall: 0.5571428571428572
+   - F1 Score: 0.6473029045643154
 Category: workclass, Value: Federal-gov
 Metrics:
-   - Precision: 0.8823529411764706
-   - Recall: 0.7317073170731707
-   - F1 Score: 0.8
+   - Precision: 0.735632183908046
+   - Recall: 0.7804878048780488
+   - F1 Score: 0.757396449704142
+Category: workclass, Value: Self-emp-inc
+Metrics:
+   - Precision: 0.7674418604651163
+   - Recall: 0.8114754098360656
+   - F1 Score: 0.7888446215139442
+Category: workclass, Value: Local-gov
+Metrics:
+   - Precision: 0.8035714285714286
+   - Recall: 0.6818181818181818
+   - F1 Score: 0.7377049180327868
+Category: workclass, Value: State-gov
+Metrics:
+   - Precision: 0.8095238095238095
+   - Recall: 0.6710526315789473
+   - F1 Score: 0.7338129496402879
 Category: workclass, Value: Without-pay
 Metrics:
    - Precision: 1.0
@@ -43,111 +43,111 @@ Metrics:
    - Precision: 1.0
    - Recall: 1.0
    - F1 Score: 1.0
-Category: education, Value: 10th
-Metrics:
-   - Precision: 1.0
-   - Recall: 0.08333333333333333
-   - F1 Score: 0.15384615384615385
 Category: education, Value: HS-grad
 Metrics:
-   - Precision: 0.8698630136986302
-   - Recall: 0.38484848484848483
-   - F1 Score: 0.5336134453781513
-Category: education, Value: Some-college
-Metrics:
-   - Precision: 0.8648648648648649
-   - Recall: 0.6464646464646465
-   - F1 Score: 0.7398843930635838
-Category: education, Value: Masters
-Metrics:
-   - Precision: 0.898876404494382
-   - Recall: 0.8839779005524862
-   - F1 Score: 0.8913649025069637
+   - Precision: 0.6983240223463687
+   - Recall: 0.3776435045317221
+   - F1 Score: 0.4901960784313726
 Category: education, Value: Bachelors
 Metrics:
-   - Precision: 0.8232662192393736
-   - Recall: 0.832579185520362
-   - F1 Score: 0.8278965129358831
-Category: education, Value: 11th
+   - Precision: 0.7590618336886994
+   - Recall: 0.7841409691629956
+   - F1 Score: 0.7713976164680391
+Category: education, Value: Some-college
 Metrics:
-   - Precision: 1.0
-   - Recall: 0.5625
-   - F1 Score: 0.72
-Category: education, Value: 7th-8th
+   - Precision: 0.7526315789473684
+   - Recall: 0.5088967971530249
+   - F1 Score: 0.6072186836518048
+Category: education, Value: 10th
 Metrics:
-   - Precision: 1.0
-   - Recall: 0.3076923076923077
-   - F1 Score: 0.47058823529411764
-Category: education, Value: Doctorate
-Metrics:
-   - Precision: 0.8852459016393442
-   - Recall: 0.9310344827586207
-   - F1 Score: 0.9075630252100839
-Category: education, Value: Prof-school
-Metrics:
-   - Precision: 0.925531914893617
-   - Recall: 0.9666666666666667
-   - F1 Score: 0.9456521739130436
-Category: education, Value: 9th
-Metrics:
-   - Precision: 1.0
-   - Recall: 0.16666666666666666
-   - F1 Score: 0.2857142857142857
+   - Precision: 0.8333333333333334
+   - Recall: 0.38461538461538464
+   - F1 Score: 0.5263157894736842
 Category: education, Value: Assoc-acdm
 Metrics:
-   - Precision: 0.9347826086956522
-   - Recall: 0.7288135593220338
-   - F1 Score: 0.819047619047619
-Category: education, Value: Assoc-voc
-Metrics:
-   - Precision: 0.9074074074074074
-   - Recall: 0.6049382716049383
-   - F1 Score: 0.725925925925926
+   - Precision: 0.7352941176470589
+   - Recall: 0.5681818181818182
+   - F1 Score: 0.641025641025641
 Category: education, Value: 5th-6th
 Metrics:
    - Precision: 1.0
-   - Recall: 0.25
-   - F1 Score: 0.4
+   - Recall: 0.0
+   - F1 Score: 0.0
+Category: education, Value: 11th
+Metrics:
+   - Precision: 1.0
+   - Recall: 0.5
+   - F1 Score: 0.6666666666666666
+Category: education, Value: Masters
+Metrics:
+   - Precision: 0.8425925925925926
+   - Recall: 0.9191919191919192
+   - F1 Score: 0.8792270531400966
+Category: education, Value: 9th
+Metrics:
+   - Precision: 1.0
+   - Recall: 0.0
+   - F1 Score: 0.0
 Category: education, Value: 12th
 Metrics:
    - Precision: 1.0
-   - Recall: 0.42857142857142855
-   - F1 Score: 0.6
+   - Recall: 0.3125
+   - F1 Score: 0.47619047619047616
+Category: education, Value: 7th-8th
+Metrics:
+   - Precision: 0.5
+   - Recall: 0.16666666666666666
+   - F1 Score: 0.25
+Category: education, Value: Assoc-voc
+Metrics:
+   - Precision: 0.7560975609756098
+   - Recall: 0.5081967213114754
+   - F1 Score: 0.6078431372549019
 Category: education, Value: 1st-4th
 Metrics:
    - Precision: 1.0
-   - Recall: 1.0
-   - F1 Score: 1.0
+   - Recall: 0.0
+   - F1 Score: 0.0
+Category: education, Value: Prof-school
+Metrics:
+   - Precision: 0.8764044943820225
+   - Recall: 0.9512195121951219
+   - F1 Score: 0.912280701754386
+Category: education, Value: Doctorate
+Metrics:
+   - Precision: 0.8524590163934426
+   - Recall: 0.896551724137931
+   - F1 Score: 0.8739495798319327
 Category: education, Value: Preschool
 Metrics:
-   - Precision: 1.0
+   - Precision: 0.0
    - Recall: 1.0
-   - F1 Score: 1.0
-Category: marital-status, Value: Divorced
-Metrics:
-   - Precision: 0.9534883720930233
-   - Recall: 0.41836734693877553
-   - F1 Score: 0.5815602836879432
+   - F1 Score: 0.0
 Category: marital-status, Value: Married-civ-spouse
 Metrics:
-   - Precision: 0.8586118251928021
-   - Recall: 0.7444279346210996
-   - F1 Score: 0.7974532431356944
+   - Precision: 0.7675765095119934
+   - Recall: 0.6951310861423221
+   - F1 Score: 0.7295597484276729
 Category: marital-status, Value: Never-married
 Metrics:
-   - Precision: 0.975609756097561
-   - Recall: 0.37735849056603776
-   - F1 Score: 0.54421768707483
+   - Precision: 0.9555555555555556
+   - Recall: 0.39814814814814814
+   - F1 Score: 0.562091503267974
+Category: marital-status, Value: Divorced
+Metrics:
+   - Precision: 0.8181818181818182
+   - Recall: 0.3375
+   - F1 Score: 0.4778761061946903
 Category: marital-status, Value: Widowed
 Metrics:
    - Precision: 1.0
-   - Recall: 0.23809523809523808
-   - F1 Score: 0.3846153846153846
+   - Recall: 0.3157894736842105
+   - F1 Score: 0.4799999999999999
 Category: marital-status, Value: Separated
 Metrics:
-   - Precision: 1.0
-   - Recall: 0.5294117647058824
-   - F1 Score: 0.6923076923076924
+   - Precision: 0.8333333333333334
+   - Recall: 0.29411764705882354
+   - F1 Score: 0.4347826086956522
 Category: marital-status, Value: Married-spouse-absent
 Metrics:
    - Precision: 1.0
@@ -156,73 +156,73 @@ Metrics:
 Category: marital-status, Value: Married-AF-spouse
 Metrics:
    - Precision: 1.0
-   - Recall: 0.6666666666666666
-   - F1 Score: 0.8
-Category: occupation, Value: Adm-clerical
-Metrics:
-   - Precision: 0.8125
-   - Recall: 0.6632653061224489
-   - F1 Score: 0.7303370786516853
-Category: occupation, Value: Transport-moving
-Metrics:
-   - Precision: 0.9642857142857143
-   - Recall: 0.40298507462686567
-   - F1 Score: 0.5684210526315789
-Category: occupation, Value: ?
-Metrics:
-   - Precision: 0.9047619047619048
-   - Recall: 0.48717948717948717
-   - F1 Score: 0.6333333333333333
-Category: occupation, Value: Prof-specialty
-Metrics:
-   - Precision: 0.8836565096952909
-   - Recall: 0.8328981723237598
-   - F1 Score: 0.8575268817204301
-Category: occupation, Value: Other-service
-Metrics:
-   - Precision: 0.9090909090909091
-   - Recall: 0.30303030303030304
-   - F1 Score: 0.45454545454545453
-Category: occupation, Value: Sales
-Metrics:
-   - Precision: 0.8260869565217391
-   - Recall: 0.6785714285714286
-   - F1 Score: 0.7450980392156864
+   - Recall: 0.0
+   - F1 Score: 0.0
 Category: occupation, Value: Craft-repair
 Metrics:
-   - Precision: 0.9390243902439024
-   - Recall: 0.4207650273224044
-   - F1 Score: 0.5811320754716981
+   - Precision: 0.78
+   - Recall: 0.4508670520231214
+   - F1 Score: 0.5714285714285715
 Category: occupation, Value: Exec-managerial
 Metrics:
-   - Precision: 0.8481927710843373
-   - Recall: 0.8734491315136477
-   - F1 Score: 0.860635696821516
+   - Precision: 0.8097686375321337
+   - Recall: 0.799492385786802
+   - F1 Score: 0.8045977011494253
+Category: occupation, Value: Prof-specialty
+Metrics:
+   - Precision: 0.8092783505154639
+   - Recall: 0.8440860215053764
+   - F1 Score: 0.8263157894736842
+Category: occupation, Value: ?
+Metrics:
+   - Precision: 0.9444444444444444
+   - Recall: 0.3695652173913043
+   - F1 Score: 0.53125
+Category: occupation, Value: Sales
+Metrics:
+   - Precision: 0.6807228915662651
+   - Recall: 0.6075268817204301
+   - F1 Score: 0.6420454545454546
 Category: occupation, Value: Protective-serv
 Metrics:
-   - Precision: 0.7916666666666666
-   - Recall: 0.4634146341463415
-   - F1 Score: 0.5846153846153846
-Category: occupation, Value: Machine-op-inspct
-Metrics:
-   - Precision: 0.9285714285714286
-   - Recall: 0.22807017543859648
-   - F1 Score: 0.3661971830985915
-Category: occupation, Value: Handlers-cleaners
-Metrics:
-   - Precision: 1.0
-   - Recall: 0.42857142857142855
-   - F1 Score: 0.6
-Category: occupation, Value: Tech-support
-Metrics:
-   - Precision: 0.9322033898305084
-   - Recall: 0.8333333333333334
-   - F1 Score: 0.8800000000000001
+   - Precision: 0.6756756756756757
+   - Recall: 0.43859649122807015
+   - F1 Score: 0.5319148936170213
 Category: occupation, Value: Farming-fishing
 Metrics:
-   - Precision: 0.8
+   - Precision: 0.7777777777777778
+   - Recall: 0.3333333333333333
+   - F1 Score: 0.4666666666666666
+Category: occupation, Value: Machine-op-inspct
+Metrics:
+   - Precision: 0.8666666666666667
+   - Recall: 0.28888888888888886
+   - F1 Score: 0.43333333333333335
+Category: occupation, Value: Adm-clerical
+Metrics:
+   - Precision: 0.65625
+   - Recall: 0.5727272727272728
+   - F1 Score: 0.6116504854368932
+Category: occupation, Value: Handlers-cleaners
+Metrics:
+   - Precision: 0.6666666666666666
    - Recall: 0.25
-   - F1 Score: 0.38095238095238093
+   - F1 Score: 0.36363636363636365
+Category: occupation, Value: Other-service
+Metrics:
+   - Precision: 1.0
+   - Recall: 0.13793103448275862
+   - F1 Score: 0.2424242424242424
+Category: occupation, Value: Tech-support
+Metrics:
+   - Precision: 0.7708333333333334
+   - Recall: 0.6851851851851852
+   - F1 Score: 0.7254901960784315
+Category: occupation, Value: Transport-moving
+Metrics:
+   - Precision: 0.8
+   - Recall: 0.2898550724637681
+   - F1 Score: 0.4255319148936171
 Category: occupation, Value: Priv-house-serv
 Metrics:
    - Precision: 1.0
@@ -233,252 +233,142 @@ Metrics:
    - Precision: 1.0
    - Recall: 1.0
    - F1 Score: 1.0
-Category: relationship, Value: Unmarried
-Metrics:
-   - Precision: 1.0
-   - Recall: 0.3
-   - F1 Score: 0.4615384615384615
 Category: relationship, Value: Husband
 Metrics:
-   - Precision: 0.864390243902439
-   - Recall: 0.7414225941422594
-   - F1 Score: 0.7981981981981983
-Category: relationship, Value: Not-in-family
-Metrics:
-   - Precision: 0.9625
-   - Recall: 0.42777777777777776
-   - F1 Score: 0.5923076923076923
+   - Precision: 0.7702573879885606
+   - Recall: 0.698961937716263
+   - F1 Score: 0.7328798185941043
 Category: relationship, Value: Own-child
 Metrics:
    - Precision: 1.0
-   - Recall: 0.15
-   - F1 Score: 0.2608695652173913
-Category: relationship, Value: Wife
+   - Recall: 0.38461538461538464
+   - F1 Score: 0.5555555555555556
+Category: relationship, Value: Not-in-family
 Metrics:
-   - Precision: 0.8181818181818182
-   - Recall: 0.8013698630136986
-   - F1 Score: 0.809688581314879
+   - Precision: 0.8732394366197183
+   - Recall: 0.37575757575757573
+   - F1 Score: 0.5254237288135594
+Category: relationship, Value: Unmarried
+Metrics:
+   - Precision: 1.0
+   - Recall: 0.3125
+   - F1 Score: 0.47619047619047616
 Category: relationship, Value: Other-relative
 Metrics:
-   - Precision: 1.0
-   - Recall: 0.2
-   - F1 Score: 0.33333333333333337
+   - Precision: 0.5
+   - Recall: 0.14285714285714285
+   - F1 Score: 0.22222222222222224
+Category: relationship, Value: Wife
+Metrics:
+   - Precision: 0.7515923566878981
+   - Recall: 0.6704545454545454
+   - F1 Score: 0.7087087087087086
 Category: race, Value: White
 Metrics:
-   - Precision: 0.8640692640692641
-   - Recall: 0.6906574394463668
-   - F1 Score: 0.7676923076923077
+   - Precision: 0.7769360269360269
+   - Recall: 0.6522968197879858
+   - F1 Score: 0.7091817134076066
 Category: race, Value: Black
 Metrics:
-   - Precision: 0.9137931034482759
-   - Recall: 0.6309523809523809
-   - F1 Score: 0.7464788732394366
+   - Precision: 0.7551020408163265
+   - Recall: 0.49333333333333335
+   - F1 Score: 0.5967741935483871
 Category: race, Value: Asian-Pac-Islander
 Metrics:
-   - Precision: 0.8666666666666667
-   - Recall: 0.7222222222222222
-   - F1 Score: 0.7878787878787877
+   - Precision: 0.8181818181818182
+   - Recall: 0.6716417910447762
+   - F1 Score: 0.7377049180327869
 Category: race, Value: Other
 Metrics:
-   - Precision: 1.0
-   - Recall: 0.6666666666666666
-   - F1 Score: 0.8
+   - Precision: 0.6666666666666666
+   - Recall: 0.5
+   - F1 Score: 0.5714285714285715
 Category: race, Value: Amer-Indian-Eskimo
 Metrics:
-   - Precision: 1.0
-   - Recall: 0.7142857142857143
-   - F1 Score: 0.8333333333333333
-Category: sex, Value: Female
-Metrics:
-   - Precision: 0.8547486033519553
-   - Recall: 0.6455696202531646
-   - F1 Score: 0.7355769230769231
+   - Precision: 0.5
+   - Recall: 0.5
+   - F1 Score: 0.5
 Category: sex, Value: Male
 Metrics:
-   - Precision: 0.8694852941176471
-   - Recall: 0.6961000735835173
-   - F1 Score: 0.7731916632611361
+   - Precision: 0.7772768259693418
+   - Recall: 0.660536398467433
+   - F1 Score: 0.7141673570836786
+Category: sex, Value: Female
+Metrics:
+   - Precision: 0.7736842105263158
+   - Recall: 0.5653846153846154
+   - F1 Score: 0.6533333333333333
 Category: native-country, Value: United-States
 Metrics:
-   - Precision: 0.8645833333333334
-   - Recall: 0.6859504132231405
-   - F1 Score: 0.7649769585253456
-Category: native-country, Value: Japan
+   - Precision: 0.773037542662116
+   - Recall: 0.6398305084745762
+   - F1 Score: 0.7001545595054095
+Category: native-country, Value: Mexico
 Metrics:
-   - Precision: 0.3333333333333333
-   - Recall: 1.0
-   - F1 Score: 0.5
-Category: native-country, Value: Poland
+   - Precision: 0.6666666666666666
+   - Recall: 0.5
+   - F1 Score: 0.5714285714285715
+Category: native-country, Value: Puerto-Rico
+Metrics:
+   - Precision: 0.8
+   - Recall: 0.8
+   - F1 Score: 0.8000000000000002
+Category: native-country, Value: France
 Metrics:
    - Precision: 1.0
-   - Recall: 0.6666666666666666
-   - F1 Score: 0.8
-Category: native-country, Value: ?
-Metrics:
-   - Precision: 0.9523809523809523
-   - Recall: 0.6666666666666666
-   - F1 Score: 0.7843137254901961
+   - Recall: 0.3333333333333333
+   - F1 Score: 0.5
 Category: native-country, Value: Jamaica
 Metrics:
    - Precision: 1.0
    - Recall: 1.0
    - F1 Score: 1.0
-Category: native-country, Value: Italy
+Category: native-country, Value: Poland
+Metrics:
+   - Precision: 0.0
+   - Recall: 1.0
+   - F1 Score: 0.0
+Category: native-country, Value: South
+Metrics:
+   - Precision: 0.5
+   - Recall: 0.5
+   - F1 Score: 0.5
+Category: native-country, Value: ?
+Metrics:
+   - Precision: 0.8076923076923077
+   - Recall: 0.6176470588235294
+   - F1 Score: 0.7
+Category: native-country, Value: El-Salvador
 Metrics:
    - Precision: 1.0
-   - Recall: 0.6666666666666666
-   - F1 Score: 0.8
-Category: native-country, Value: Cuba
+   - Recall: 1.0
+   - F1 Score: 1.0
+Category: native-country, Value: Germany
+Metrics:
+   - Precision: 1.0
+   - Recall: 0.7
+   - F1 Score: 0.8235294117647058
+Category: native-country, Value: Philippines
+Metrics:
+   - Precision: 0.875
+   - Recall: 0.9333333333333333
+   - F1 Score: 0.9032258064516129
+Category: native-country, Value: Japan
+Metrics:
+   - Precision: 1.0
+   - Recall: 1.0
+   - F1 Score: 1.0
+Category: native-country, Value: Haiti
 Metrics:
    - Precision: 1.0
    - Recall: 1.0
    - F1 Score: 1.0
 Category: native-country, Value: England
 Metrics:
-   - Precision: 1.0
-   - Recall: 1.0
-   - F1 Score: 1.0
-Category: native-country, Value: Mexico
-Metrics:
-   - Precision: 1.0
-   - Recall: 0.42857142857142855
-   - F1 Score: 0.6
-Category: native-country, Value: Germany
-Metrics:
-   - Precision: 1.0
-   - Recall: 0.7272727272727273
-   - F1 Score: 0.8421052631578948
-Category: native-country, Value: Philippines
-Metrics:
-   - Precision: 1.0
-   - Recall: 0.6666666666666666
-   - F1 Score: 0.8
-Category: native-country, Value: India
-Metrics:
-   - Precision: 1.0
-   - Recall: 0.7777777777777778
-   - F1 Score: 0.8750000000000001
-Category: native-country, Value: Canada
-Metrics:
-   - Precision: 1.0
-   - Recall: 0.8461538461538461
-   - F1 Score: 0.9166666666666666
-Category: native-country, Value: Guatemala
-Metrics:
-   - Precision: 1.0
-   - Recall: 0.0
-   - F1 Score: 0.0
+   - Precision: 0.8
+   - Recall: 0.5714285714285714
+   - F1 Score: 0.6666666666666666
 Category: native-country, Value: Dominican-Republic
-Metrics:
-   - Precision: 1.0
-   - Recall: 0.0
-   - F1 Score: 0.0
-Category: native-country, Value: South
-Metrics:
-   - Precision: 0.6666666666666666
-   - Recall: 0.8
-   - F1 Score: 0.7272727272727272
-Category: native-country, Value: Thailand
-Metrics:
-   - Precision: 1.0
-   - Recall: 1.0
-   - F1 Score: 1.0
-Category: native-country, Value: Puerto-Rico
-Metrics:
-   - Precision: 0.5
-   - Recall: 1.0
-   - F1 Score: 0.6666666666666666
-Category: native-country, Value: Haiti
-Metrics:
-   - Precision: 1.0
-   - Recall: 1.0
-   - F1 Score: 1.0
-Category: native-country, Value: Nicaragua
-Metrics:
-   - Precision: 1.0
-   - Recall: 1.0
-   - F1 Score: 1.0
-Category: native-country, Value: Peru
-Metrics:
-   - Precision: 1.0
-   - Recall: 1.0
-   - F1 Score: 1.0
-Category: native-country, Value: Laos
-Metrics:
-   - Precision: 1.0
-   - Recall: 1.0
-   - F1 Score: 1.0
-Category: native-country, Value: Vietnam
-Metrics:
-   - Precision: 1.0
-   - Recall: 0.0
-   - F1 Score: 0.0
-Category: native-country, Value: Taiwan
-Metrics:
-   - Precision: 1.0
-   - Recall: 1.0
-   - F1 Score: 1.0
-Category: native-country, Value: El-Salvador
-Metrics:
-   - Precision: 1.0
-   - Recall: 1.0
-   - F1 Score: 1.0
-Category: native-country, Value: Portugal
-Metrics:
-   - Precision: 1.0
-   - Recall: 1.0
-   - F1 Score: 1.0
-Category: native-country, Value: Ireland
-Metrics:
-   - Precision: 1.0
-   - Recall: 1.0
-   - F1 Score: 1.0
-Category: native-country, Value: Ecuador
-Metrics:
-   - Precision: 1.0
-   - Recall: 1.0
-   - F1 Score: 1.0
-Category: native-country, Value: Iran
-Metrics:
-   - Precision: 0.5
-   - Recall: 1.0
-   - F1 Score: 0.6666666666666666
-Category: native-country, Value: Yugoslavia
-Metrics:
-   - Precision: 1.0
-   - Recall: 1.0
-   - F1 Score: 1.0
-Category: native-country, Value: France
-Metrics:
-   - Precision: 0.75
-   - Recall: 1.0
-   - F1 Score: 0.8571428571428571
-Category: native-country, Value: Greece
-Metrics:
-   - Precision: 1.0
-   - Recall: 0.5
-   - F1 Score: 0.6666666666666666
-Category: native-country, Value: Hungary
-Metrics:
-   - Precision: 1.0
-   - Recall: 0.0
-   - F1 Score: 0.0
-Category: native-country, Value: Hong
-Metrics:
-   - Precision: 0.0
-   - Recall: 1.0
-   - F1 Score: 0.0
-Category: native-country, Value: Trinadad&Tobago
-Metrics:
-   - Precision: 1.0
-   - Recall: 0.0
-   - F1 Score: 0.0
-Category: native-country, Value: Cambodia
-Metrics:
-   - Precision: 1.0
-   - Recall: 0.6666666666666666
-   - F1 Score: 0.8
-Category: native-country, Value: Outlying-US(Guam-USVI-etc)
 Metrics:
    - Precision: 1.0
    - Recall: 1.0
@@ -488,17 +378,127 @@ Metrics:
    - Precision: 1.0
    - Recall: 1.0
    - F1 Score: 1.0
+Category: native-country, Value: Taiwan
+Metrics:
+   - Precision: 1.0
+   - Recall: 0.75
+   - F1 Score: 0.8571428571428571
+Category: native-country, Value: Thailand
+Metrics:
+   - Precision: 1.0
+   - Recall: 0.0
+   - F1 Score: 0.0
+Category: native-country, Value: India
+Metrics:
+   - Precision: 0.7647058823529411
+   - Recall: 0.8125
+   - F1 Score: 0.787878787878788
+Category: native-country, Value: Yugoslavia
+Metrics:
+   - Precision: 0.0
+   - Recall: 0.0
+   - F1 Score: 0.0
+Category: native-country, Value: Canada
+Metrics:
+   - Precision: 0.8333333333333334
+   - Recall: 0.625
+   - F1 Score: 0.7142857142857143
+Category: native-country, Value: Guatemala
+Metrics:
+   - Precision: 1.0
+   - Recall: 1.0
+   - F1 Score: 1.0
+Category: native-country, Value: Cambodia
+Metrics:
+   - Precision: 1.0
+   - Recall: 0.0
+   - F1 Score: 0.0
 Category: native-country, Value: China
 Metrics:
-   - Precision: 0.8
+   - Precision: 0.8333333333333334
    - Recall: 1.0
-   - F1 Score: 0.888888888888889
+   - F1 Score: 0.9090909090909091
+Category: native-country, Value: Italy
+Metrics:
+   - Precision: 0.6666666666666666
+   - Recall: 0.4
+   - F1 Score: 0.5
+Category: native-country, Value: Laos
+Metrics:
+   - Precision: 1.0
+   - Recall: 1.0
+   - F1 Score: 1.0
+Category: native-country, Value: Portugal
+Metrics:
+   - Precision: 1.0
+   - Recall: 1.0
+   - F1 Score: 1.0
+Category: native-country, Value: Outlying-US(Guam-USVI-etc)
+Metrics:
+   - Precision: 1.0
+   - Recall: 1.0
+   - F1 Score: 1.0
+Category: native-country, Value: Ireland
+Metrics:
+   - Precision: 1.0
+   - Recall: 1.0
+   - F1 Score: 1.0
+Category: native-country, Value: Nicaragua
+Metrics:
+   - Precision: 1.0
+   - Recall: 1.0
+   - F1 Score: 1.0
+Category: native-country, Value: Vietnam
+Metrics:
+   - Precision: 1.0
+   - Recall: 0.0
+   - F1 Score: 0.0
+Category: native-country, Value: Honduras
+Metrics:
+   - Precision: 1.0
+   - Recall: 1.0
+   - F1 Score: 1.0
+Category: native-country, Value: Peru
+Metrics:
+   - Precision: 1.0
+   - Recall: 1.0
+   - F1 Score: 1.0
 Category: native-country, Value: Scotland
 Metrics:
    - Precision: 1.0
    - Recall: 1.0
    - F1 Score: 1.0
-Category: native-country, Value: Honduras
+Category: native-country, Value: Ecuador
+Metrics:
+   - Precision: 1.0
+   - Recall: 1.0
+   - F1 Score: 1.0
+Category: native-country, Value: Greece
+Metrics:
+   - Precision: 0.5
+   - Recall: 1.0
+   - F1 Score: 0.6666666666666666
+Category: native-country, Value: Iran
+Metrics:
+   - Precision: 1.0
+   - Recall: 0.6666666666666666
+   - F1 Score: 0.8
+Category: native-country, Value: Cuba
+Metrics:
+   - Precision: 1.0
+   - Recall: 1.0
+   - F1 Score: 1.0
+Category: native-country, Value: Hungary
+Metrics:
+   - Precision: 0.0
+   - Recall: 0.0
+   - F1 Score: 0.0
+Category: native-country, Value: Hong
+Metrics:
+   - Precision: 1.0
+   - Recall: 1.0
+   - F1 Score: 1.0
+Category: native-country, Value: Trinadad&Tobago
 Metrics:
    - Precision: 1.0
    - Recall: 1.0

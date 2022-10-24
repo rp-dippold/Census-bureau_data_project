@@ -3,10 +3,11 @@ import numpy as np
 from sklearn.metrics import fbeta_score, precision_score, recall_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import GridSearchCV
+from joblib import load
 
 
 # Optional: implement hyperparameter tuning.
-def train_model(X_train, y_train):
+def train_model(X_train, y_train, simple=True):
     """
     Trains a machine learning model and returns it.
 
@@ -21,6 +22,13 @@ def train_model(X_train, y_train):
     model
         Trained machine learning model.
     """
+    if simple:
+        clf = RandomForestClassifier(n_estimators = 200,
+                                     max_depth = 50,
+                                     min_samples_split = 20,
+                                     random_state=42)
+        return clf.fit(X_train, y_train)
+
     param_grid = {'n_estimators': [500, 700, 1000],
                   'max_depth': [30, 50, 100],
                   'min_samples_split': [20, 40, 60]}
@@ -70,10 +78,25 @@ def inference(model, X):
     preds : np.array
         Predictions from the model.
     """
-    return model.predict(X)
+    preds = model.predict(X)
+    return preds
 
 
-def compute_metrics_for_slice(clf, data, X, y, categories):
+def load_model():
+    """Load an existing model.
+    
+    Returns
+    -------
+    model: dict
+        A dictionary containing the classifier 'clf', the
+        encoder 'encoder' the label binarizer 'lbl_binarizer'
+        and all categorical features 'cat_features'.
+    """
+    model = load('./model/model.joblib')
+    return model
+
+
+def compute_metrics_for_slices(clf, data, X, y, categories):
     """Compute the metrics of a model for each categorical variable held fixed.
 
     Inputs
@@ -90,21 +113,22 @@ def compute_metrics_for_slice(clf, data, X, y, categories):
     categories: list
         List of categorical features.
     """
-    with open('../metrics/slice_output.txt', 'w', encoding='utf-8') as f:
+    with open('./metrics/slice_output.txt', 'w', encoding='utf-8') as f:
         for cat in categories:
             # Compute model performance on slices of cat
             for val in data[cat].unique():
                 f.writelines(f'Category: {cat}, Value: {val}\n')
                 f.writelines('Metrics:\n')
-                # use column "Unnamed: 0" (copy of data index) to select all
+                # use column "index" (copy of original index) to select all
                 # rows belonging to category "cat".
-                idx = data[data[cat] == val]['Unnamed: 0'].values
+                idx = data[data[cat] == val]['index'].values
                 X_cat = X[np.isin(X[:, 0], idx)]
                 y_cat = y[np.isin(X[:, 0], idx)]
                 if X_cat.shape[0] == 0:
                     f.writelines('   No values found to calculate metrics.\n')
                 else:
-                    pred = inference(clf, X_cat)
+                    # ignore first column which contains the index
+                    pred = inference(clf, X_cat[:,1:])
                     precision, recall, fbeta = compute_model_metrics(y_cat,
                                                                      pred)
                     f.writelines(f'   - Precision: {precision}\n')
