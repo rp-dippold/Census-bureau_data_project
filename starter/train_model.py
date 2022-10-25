@@ -5,9 +5,8 @@ from sklearn.model_selection import train_test_split
 # Add the necessary imports for the starter code.
 from ml.data import process_data
 from ml.model import compute_metrics_for_slices, compute_model_metrics
-from ml.model import train_model, inference
+from ml.model import train_model, inference, save_model
 from pandas import read_csv
-from joblib import dump
 
 # Add code to load in the data.
 data = read_csv('./data/census_cleaned.csv')
@@ -40,7 +39,7 @@ X_test, y_test, encoder, lb = process_data(
 # Train the model and ignore the first column which contains the orginal
 # index of each record. The index is required in "compute_metrics_for_slices"
 # to select data belonging to data slices.
-clf = train_model(X_train[:, 1:], y_train, hyper_tune=True)
+clf = train_model(X_train[:, 1:], y_train, hyper_tune=False)
 
 # Obtain and save model metrics
 preds = inference(clf, X_test[:, 1:])
@@ -53,16 +52,11 @@ with open('./metrics/model_metrics.txt', 'w', encoding='utf-8') as f:
 
 # Save the classifier, the encoder and the categorical features
 # as they are required to process new data before feeded to the classifier.
-model = {
-    'encoder': encoder,
-    'classifier': clf,
-    'cat_features': cat_features
-}
-dump(model, './model/model.joblib', compress=3)
+save_model(clf, encoder, cat_features)
 
 # Compute model performance on slices using test data
 compute_metrics_for_slices(
-    model['classifier'],
+    clf,
     test,
     X_test,
     y_test,

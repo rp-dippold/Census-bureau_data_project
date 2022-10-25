@@ -3,13 +3,12 @@ import numpy as np
 from sklearn.metrics import fbeta_score, precision_score, recall_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import GridSearchCV
-from joblib import load
+from joblib import load, dump
 
 
 # Optional: implement hyperparameter tuning.
 def train_model(X_train, y_train, hyper_tune=False):
-    """
-    Trains a machine learning model and returns it.
+    """Trains a machine learning model and returns it.
 
     Inputs
     ------
@@ -73,6 +72,7 @@ def inference(model, X):
         Trained machine learning model.
     X : np.array
         Data used for prediction.
+
     Returns
     -------
     preds : np.array
@@ -80,6 +80,26 @@ def inference(model, X):
     """
     preds = model.predict(X)
     return preds
+
+
+def save_model(clf, encoder, cat_features):
+    """ Save a model.
+
+    Inputs
+    ------
+    model : sklearn classifier
+        Trained machine learning model.
+    encoder : sklearn OneHotEncoder
+        Encoder to process categorical features.
+    cat_features : list
+        Names of categorical features.
+    """
+    model = {
+        'encoder': encoder,
+        'classifier': clf,
+        'cat_features': cat_features
+    }
+    dump(model, './model/model.joblib', compress=3)
 
 
 def load_model():
