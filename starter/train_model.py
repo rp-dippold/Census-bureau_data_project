@@ -39,7 +39,7 @@ X_test, y_test, encoder, lb = process_data(
 # Train the model and ignore the first column which contains the orginal
 # index of each record. The index is required in "compute_metrics_for_slices"
 # to select data belonging to data slices.
-clf = train_model(X_train[:, 1:], y_train, hyper_tune=False)
+clf = train_model(X_train[:, 1:], y_train, hyper_tune=True)
 
 # Obtain and save model metrics
 preds = inference(clf, X_test[:, 1:])
