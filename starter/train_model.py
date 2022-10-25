@@ -4,8 +4,8 @@ from sklearn.model_selection import train_test_split
 
 # Add the necessary imports for the starter code.
 from ml.data import process_data
-from ml.model import train_model
-from ml.model import compute_metrics_for_slices
+from ml.model import compute_metrics_for_slices, compute_model_metrics
+from ml.model import train_model, inference
 from pandas import read_csv
 from joblib import dump
 
@@ -40,7 +40,16 @@ X_test, y_test, encoder, lb = process_data(
 # Train the model and ignore the first column which contains the orginal
 # index of each record. The index is required in "compute_metrics_for_slices"
 # to select data belonging to data slices.
-clf = train_model(X_train[:, 1:], y_train)
+clf = train_model(X_train[:, 1:], y_train, hyper_tune=True)
+
+# Obtain and save model metrics
+preds = inference(clf, X_test[:, 1:])
+precision, recall, f1 = compute_model_metrics(y_test, preds)
+with open('./metrics/model_metrics.txt', 'w', encoding='utf-8') as f:
+    f.writelines('Model Metrics:\n')
+    f.writelines(f'   - Precision: {precision}\n')
+    f.writelines(f'   - Recall: {recall}\n')
+    f.writelines(f'   - F1 Score: {f1}\n')
 
 # Save the classifier, the encoder and the categorical features
 # as they are required to process new data before feeded to the classifier.
@@ -49,7 +58,7 @@ model = {
     'classifier': clf,
     'cat_features': cat_features
 }
-dump(model, './model/model.joblib')
+dump(model, './model/model.joblib', compress=3)
 
 # Compute model performance on slices using test data
 compute_metrics_for_slices(

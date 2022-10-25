@@ -7,7 +7,7 @@ from joblib import load
 
 
 # Optional: implement hyperparameter tuning.
-def train_model(X_train, y_train, simple=True):
+def train_model(X_train, y_train, hyper_tune=False):
     """
     Trains a machine learning model and returns it.
 
@@ -22,7 +22,7 @@ def train_model(X_train, y_train, simple=True):
     model
         Trained machine learning model.
     """
-    if simple:
+    if not hyper_tune:
         clf = RandomForestClassifier(n_estimators=200,
                                      max_depth=50,
                                      min_samples_split=20,
@@ -128,9 +128,9 @@ def compute_metrics_for_slices(clf, data, X, y, categories):
                     f.writelines('   No values found to calculate metrics.\n')
                 else:
                     # ignore first column which contains the index
-                    pred = inference(clf, X_cat[:, 1:])
+                    preds = inference(clf, X_cat[:, 1:])
                     precision, recall, fbeta = compute_model_metrics(y_cat,
-                                                                     pred)
+                                                                     preds)
                     f.writelines(f'   - Precision: {precision}\n')
                     f.writelines(f'   - Recall: {recall}\n')
                     f.writelines(f'   - F1 Score: {fbeta}\n')
